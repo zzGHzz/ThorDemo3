@@ -10,6 +10,7 @@ function genPrivateKey(): [string, string] {
     return [buffer2hexstr(sk), buffer2hexstr(addr)];
 }
 
+// Generate new accounts
 const numKey = 1;
 (() => {
     for (let i = 0; i < numKey; i++) {
