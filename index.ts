@@ -176,7 +176,7 @@ function printReceipt(msg: string, receipt: Connex.Thor.Receipt, to: string) {
     }
     if (receipt === null) { console.error('Cannot find the TX.'); }
 
-    printReceipt('MPP - Set User', receipt, '0x000000000000000000000050726f746f74797065');
+    printReceipt('MPP - Add User', receipt, '0x000000000000000000000050726f746f74797065');
 
     ////////////////////
     // MPP - Set credit plan
@@ -192,7 +192,7 @@ function printReceipt(msg: string, receipt: Connex.Thor.Receipt, to: string) {
     }
     if (receipt === null) { console.error('Cannot find the TX.'); }
 
-    printReceipt('MPP - Set Credit Plan', receipt, '0x000000000000000000000050726f746f74797065');
+    printReceipt('MPP - Add Credit Plan', receipt, '0x000000000000000000000050726f746f74797065');
 
     ////////////////////
     // MPP - Send TX
@@ -206,5 +206,5 @@ function printReceipt(msg: string, receipt: Connex.Thor.Receipt, to: string) {
     }
     if (receipt === null) { console.error('Cannot find the TX.'); }
 
-    printReceipt('MPP - User Send TX', receipt, addrDelegator);
+    printReceipt('MPP - User Sends TX', receipt, addrDelegator);
 })();
